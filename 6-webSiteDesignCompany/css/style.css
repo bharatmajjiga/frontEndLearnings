@@ -71,7 +71,22 @@ header a:active {
 }
 
 /*showcase styling*/
+#showcase {
+	background: url('../images/showcase.jpg') no-repeat 0 -400px;
+	min-height: 400px;
+	text-align: center;
+	color: #ffffff;
+}
 
+#showcase h1{
+	margin-bottom: 10px;
+	font-size: 53px;
+	margin-top: 100px;
+}
+
+#showcase p {
+	font-size: 20px;
+}
 
 
 
