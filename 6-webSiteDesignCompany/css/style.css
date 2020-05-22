@@ -35,6 +35,20 @@ ul {
 	padding-right: 20px;
 }
 
+.dark {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	background-color: #35424A;	
+	color: #ffffff;
+}
+
+.light {
+	background-color: #f4f4f4;
+	margin-bottom: 5px;
+	padding: 15px;
+}
+
 /*header styling*/
 header {
 	background-color: #35424A;
@@ -139,6 +153,38 @@ header a:active {
 	width: 90px;
 }
 
+/*article*/
+article#main-col {
+	float: left;
+	width: 65%;
+}
+
+/*aside*/
+aside#sidebar {
+	float: right;
+	width: 30%;
+}
+
+#services {
+	background-color: #ffffff;
+}
+
+#services article#main-col {
+	float: left;
+	width: 60%;
+}
+
+#getQuote div.dark {
+	float: right;
+	width: 30%;
+}
+
+#getQuote input, #getQuote textarea {
+	display: block;
+	margin-bottom: 5px;
+}
+
+
 footer {
 	padding: 20px;
 	margin-top: 20px;
@@ -147,25 +193,32 @@ footer {
 	color: #ffffff;
 }
 
-#aboutUs .section-1 {
-	float: left;
-	width: 60%;
-	margin-right: 5px;
-	box-sizing: border-box;
+
+@media(max-width: 768px) {
+	
+	#branding, #navBar, #navBar li, #newsLetter h1, #newsLetter input[type='email'], #newsLetter button, 
+	#boxes .skills, article#main-col, aside#sidebar, #services article#main-col, #getQuote div.dark {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}	
+	
+	#getQuote input, #getQuote textarea {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	#newsLetter input[type='email'] {
+		margin-bottom: 10px;
+	}
+	#newsLetter h1 {
+		float: none;
+	}
+	
+	#newsLetter form {
+		float: none;
+	}
+	
 }
-
-#aboutUs aside {
-	float: right;
-	width: 40%;	
-	box-sizing: border-box;
-}
-
-#aboutUs .section-1 p:nth-child(2) {
-	background-color: #35424A;
-	padding: 10px;
-}
-
-
 
 
 
